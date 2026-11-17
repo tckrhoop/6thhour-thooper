@@ -14,7 +14,7 @@ for number in range(players-1):
     rating = int(input("Enter a rating 1-5"))
     while rating >5 or rating < 1:
         print("Your rating has to be 1-5 ")
-        break
+        rating = int(input("Enter a rating 1-5"))
     else: ratings.append(rating)
 avrg = sum(ratings)/len(ratings)
 print("The average rating is: ", avrg)
