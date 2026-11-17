@@ -10,7 +10,7 @@
 #a single model from 1 to 5, and then give the average score of all of the ratings.
 players = int(input("# of players: "))
 ratings = []
-for number in range(players):
+for number in range(players-1):
     rating = int(input("Enter a rating 1-5"))
     while rating >5 or rating < 1:
         print("Your rating has to be 1-5 ")
